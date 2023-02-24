@@ -1,0 +1,9 @@
+project: cron-descriptor
+target: fuzz-cron
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_cron.py
+    libfuzzer: true
+    timeout: 12
